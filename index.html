@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap"
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+    />
+
+    <style>
+      /* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container, .container-group, .backgroundshadow, .frame-container, .container-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .container, .container-group, .backgroundshadow, .frame-container, .container-parent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container-group {
+    width: 100%;
+  }
+
+  .backgroundshadow, .frame-container, .container-parent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-icon {
+    margin-bottom: 10px;
+  }
+
+  .linkmargin, .margin, .item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container, .container-group, .backgroundshadow, .frame-container, .container-parent {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .container-group {
+    width: 50%;
+  }
+
+  .backgroundshadow, .frame-container, .container-parent {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .img-icon {
+    margin-bottom: 10px;
+  }
+
+  .linkmargin, .margin, .item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .container, .container-group, .backgroundshadow, .frame-container, .container-parent {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container {
+    width: 33%;
+  }
+
+  .container-group {
+    width: 33%;
+  }
+
+  .backgroundshadow, .frame-container, .container-parent {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .img-icon {
+    margin-bottom: 10px;
+  }
+
+  .linkmargin, .margin, .item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Specific classes */
+.business-heading, .transfer-spend-parent, .loans-parent, .more-for-you {
+  text-align: center;
+}
+
+.kuda-business, .transfer-spend, .loans, .more-for-you {
+  font-size: 1.2rem;
+}
+
+.grow-your-business-container, .send-money-for-container, .get-up-to-container, .learn-more, .join-kuda, .contact {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .kuda-business, .transfer-spend, .loans, .more-for-you {
+    font-size: 1rem;
+  }
+
+  .grow-your-business-container, .send-money-for-container, .get-up-to-container, .learn-more, .join-kuda, .contact {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .kuda-business, .transfer-spend, .loans, .more-for-you {
+    font-size: 1.1rem;
+  }
+
+  .grow-your-business-container, .send-money-for-container, .get-up-to-container, .learn-more, .join-kuda, .contact {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .kuda-business, .transfer-spend, .loans, .more-for-you {
+    font-size: 1.2rem;
+  }
+
+  .grow-your-business-container, .send-money-for-container, .get-up-to-container, .learn-more, .join-kuda, .contact {
+    font-size: 1rem;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="kudacom">
+      <header class="header">
+        <div class="container">
+          <div class="container1">
+            <div class="link">
+              <img
+                class="svg-icon"
+                loading="lazy"
+                alt=""
+                src="./public/svg.svg"
+              />
+            </div>
+            <div class="listmargin">
+              <div class="list">
+                <div class="itemmargin">
+                  <div class="item">
+                    <div class="container2">
+                      <a class="personal">Personal</a>
+                      <div class="margin">
+                        <img
+                          class="svg-icon1"
+                          alt=""
+                          src="./public/svg-1.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="itemmargin1">
+                  <div class="item1">
+                    <div class="container3">
+                      <a class="business">Business</a>
+                      <div class="margin1">
+                        <img
+                          class="svg-icon2"
+                          alt=""
+                          src="./public/svg-2.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="itemmargin2">
+                  <div class="item2">
+                    <div class="container4">
+                      <a class="company">Company</a>
+                      <div class="margin2">
+                        <img
+                          class="svg-icon3"
+                          alt=""
+                          src="./public/svg-3.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="itemmargin3">
+                  <div class="item3">
+                    <div class="container5">
+                      <a class="help">Help</a>
+                      <div class="margin3">
+                        <img
+                          class="svg-icon4"
+                          alt=""
+                          src="./public/svg-4.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="margin4">
+            <div class="container6">
+              <div class="link1">
+                <a class="sign-in">Sign In</a>
+              </div>
+              <div class="linkmargin">
+                <button class="link2">
+                  <a class="join-kuda">Join Kuda</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="margin5">
+            <div class="container7">
+              <div class="container8">
+                <div class="container9">
+                  <img
+                    class="svg-icon5"
+                    loading="lazy"
+                    alt=""
+                    src="./public/svg-5@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="frame-parent">
+        <section class="container-wrapper">
+          <div class="container10">
+            <div class="container11">
+              <div class="container12">
+                <div class="container-container">
+                  <div class="container13">
+                    <div class="container14">
+                      <div class="heading-1">
+                        <h1 class="the-money-app-container">
+                          <span>
+                            <p class="the-money-app">The money app for</p>
+                            <p class="africans">Africans.</p>
+                          </span>
+                        </h1>
+                      </div>
+                      <div class="container15">
+                        <div class="make-free-transfers-container">
+                          <span>
+                            <p class="make-free-transfers">
+                              Make free transfers, enjoy cashless payment
+                            </p>
+                            <p class="options-and-earn">
+                              options and earn interest on your savings with
+                            </p>
+                            <p class="kuda">Kuda.</p>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="container16">
+                        <div class="linkmargin1">
+                          <div class="link3">
+                            <img
+                              class="svg-icon6"
+                              loading="lazy"
+                              alt=""
+                              src="./public/svg-6@2x.png"
+                            />
+                          </div>
+                        </div>
+                        <div class="link4">
+                          <img
+                            class="svg-icon7"
+                            loading="lazy"
+                            alt=""
+                            src="./public/svg-7.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="container17">
+                        <div class="margin6">
+                          <img
+                            class="svg-icon8"
+                            loading="lazy"
+                            alt=""
+                            src="./public/svg-8.svg"
+                          />
+                        </div>
+                        <div class="container18">
+                          <img
+                            class="svg-icon9"
+                            loading="lazy"
+                            alt=""
+                            src="./public/svg-9.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container19">
+                  <div class="container20">
+                    <div class="button-animation">
+                      <img
+                        class="svg-icon10"
+                        alt=""
+                        src="./public/svg-10@2x.png"
+                      />
+                    </div>
+                    <div class="container21">
+                      <div class="button-animation1">
+                        <img
+                          class="svg-icon11"
+                          loading="lazy"
+                          alt=""
+                          src="./public/svg-11@2x.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container22">
+              <div class="container23">
+                <div class="margin7">
+                  <div class="backgroundshadow">
+                    <div class="container24">
+                      <img
+                        class="svg-icon12"
+                        loading="lazy"
+                        alt=""
+                        src="./public/svg-12.svg"
+                      />
+                    </div>
+                    <div class="container25">
+                      <div class="order-a-kuda-container">
+                        <p class="order-a-kuda">
+                          Order a Kuda Visa card on the app
+                        </p>
+                        <p class="with-pickup-and">
+                          with pickup and delivery options.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin8">
+                  <div class="backgroundshadow1">
+                    <div class="container26">
+                      <img
+                        class="svg-icon13"
+                        loading="lazy"
+                        alt=""
+                        src="./public/svg-13@2x.png"
+                      />
+                    </div>
+                    <div class="container27">
+                      <div class="enjoy-cashless-payment-container">
+                        <span>
+                          <p class="enjoy-cashless-payment">
+                            Enjoy cashless payment options online
+                          </p>
+                          <p class="and-offline">and offline.</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin9">
+                  <div class="backgroundshadow2">
+                    <input class="container28" type="checkbox" />
+
+                    <div class="container29">
+                      <div class="pay-your-essential-container">
+                        <p class="pay-your-essential">
+                          Pay your essential bills and buy gift
+                        </p>
+                        <p class="cards-easily">cards easily.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container30">
+                <div class="margin10">
+                  <div class="backgroundshadow3">
+                    <div class="container31">
+                      <img
+                        class="svg-icon14"
+                        alt=""
+                        src="./public/svg-15.svg"
+                      />
+                    </div>
+                    <div class="container32">
+                      <div class="get-25-free-container">
+                        <p class="get-25-free">
+                          Get 25 free transfers to Nigerian banks
+                        </p>
+                        <p class="every-month">every month.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin11">
+                  <div class="backgroundshadow4">
+                    <div class="container33">
+                      <img
+                        class="svg-icon15"
+                        alt=""
+                        src="./public/svg-16.svg"
+                      />
+                    </div>
+                    <div class="container34">
+                      <div class="save-money-automatically-container">
+                        <p class="save-money-automatically">
+                          Save money automatically any time
+                        </p>
+                        <p class="you-spend">you spend.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container35">
+              <div class="container36">
+                <div class="container37">
+                  <div class="heading-11">
+                    <h1 class="your-phone-container">
+                      <span>
+                        <p class="your-phone">Your phone +</p>
+                        <p class="our-app">our app +</p>
+                        <p class="a-debit-card">a debit card =</p>
+                        <p class="a-simpler-life">a simpler life.</p>
+                      </span>
+                    </h1>
+                  </div>
+                  <div class="container38">
+                    <div class="we-designed-a-container">
+                      <span>
+                        <p class="we-designed-a">
+                          We designed a money app for your lifestyle,
+                        </p>
+                        <p class="and-you-can">
+                          and you can get a debit card to go with it.
+                        </p>
+                        <p class="thats-all-you">
+                          That's all you need to make the right money
+                        </p>
+                        <p class="moves">moves.</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="link5">
+                    <div class="container39">
+                      <b class="open-an-account">Open An Account in Minutes</b>
+                    </div>
+                    <div class="margin12">
+                      <img
+                        class="svg-icon16"
+                        alt=""
+                        src="./public/svg-17.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container40">
+                <div class="container41">
+                  <img
+                    class="button-animation2"
+                    alt=""
+                    src="./public/button--animation@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container42">
+              <div class="container43">
+                <div class="container44">
+                  <img
+                    class="button-animation3"
+                    alt=""
+                    src="./public/button--animation-1@2x.png"
+                  />
+                </div>
+              </div>
+              <div class="container45">
+                <div class="container46">
+                  <div class="heading-12">
+                    <h1 class="its-your-money-container">
+                      <span>
+                        <p class="its-your-money">It’s your money, we just</p>
+                        <p class="help-you-manage">help you manage it.</p>
+                      </span>
+                    </h1>
+                  </div>
+                  <div class="container47">
+                    <div class="save-it-spend-container">
+                      <p class="save-it-spend">
+                        Save it, spend it, send it. It’s up to you.
+                      </p>
+                      <p class="whatever-you-choose">
+                        Whatever you choose to do with your money,
+                      </p>
+                      <p class="well-make-sure">
+                        we’ll make sure it’s done better and free of
+                      </p>
+                      <p class="charge-we-take">
+                        charge. We take responsibility for that.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container48">
+              <div class="container49">
+                <div class="container50">
+                  <div class="heading-13">
+                    <h1 class="save-money-as-container">
+                      <span>
+                        <p class="save-money-as">Save money as you</p>
+                        <p class="spend-it-seriously">spend it, seriously.</p>
+                      </span>
+                    </h1>
+                  </div>
+                  <div class="container51">
+                    <div class="you-cant-avoid-container">
+                      <p class="you-cant-avoid">
+                        You can’t avoid spending. That’s how you pay
+                      </p>
+                      <p class="for-your-needs">
+                        for your needs. But we can help you put money
+                      </p>
+                      <p class="away-every-time">
+                        away every time you pay for something. Just
+                      </p>
+                      <p class="set-a-percentage">
+                        set a percentage to save and watch your
+                      </p>
+                      <p class="money-grow">money grow.</p>
+                    </div>
+                  </div>
+                  <div class="link6">
+                    <div class="container52">
+                      <b class="see-all-our">See all our Savings</b>
+                    </div>
+                    <div class="margin13">
+                      <img
+                        class="svg-icon17"
+                        alt=""
+                        src="./public/svg-17.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container53">
+                <div class="container54">
+                  <div class="button-animation4">
+                    <img
+                      class="svg-icon18"
+                      alt=""
+                      src="./public/svg-19@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container55">
+              <div class="container56">
+                <div class="container57">
+                  <img
+                    class="button-animation5"
+                    alt=""
+                    src="./public/button--animation-2@2x.png"
+                  />
+                </div>
+              </div>
+              <div class="container58">
+                <div class="container59">
+                  <div class="heading-14">
+                    <div class="turn-off-access-container">
+                      <span>
+                        <p class="turn-off-access">Turn off access, turn on</p>
+                        <p class="safety">safety.</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="container60">
+                    <div class="life-happens-milk-container">
+                      <p class="life-happens-milk">
+                        Life happens. Milk spills. Debit cards go
+                      </p>
+                      <p class="missing-if-that">
+                        missing. If that ever happens, you can block
+                      </p>
+                      <p class="your-missing-card">
+                        your missing card on the app so no one can
+                      </p>
+                      <p class="use-it-wed">
+                        use it. We’d like to see them try.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="link7">
+                    <div class="container61">
+                      <b class="learn-more-about">Learn more about Cards</b>
+                    </div>
+                    <div class="margin14">
+                      <img
+                        class="svg-icon19"
+                        alt=""
+                        src="./public/svg-17.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container62">
+              <div class="container63">
+                <div class="container64">
+                  <div class="heading-15">
+                    <h1 class="were-always-happy-container">
+                      <span>
+                        <p class="were-always-happy">We’re always happy to</p>
+                        <p class="help-you">help you.</p>
+                      </span>
+                    </h1>
+                  </div>
+                  <div class="container65">
+                    <div class="you-can-chat-container">
+                      <p class="you-can-chat">
+                        You can chat with us on the app, slide into our
+                      </p>
+                      <p class="dms-tweet-leave">
+                        DMs, tweet, leave an Instagram comment,
+                      </p>
+                      <p class="send-an-email">
+                        send an email or call. However you choose to
+                      </p>
+                      <p class="reach-out-therell">
+                        reach out, there’ll always be a friendly person
+                      </p>
+                      <p class="there-to-make">there to make your life easy.</p>
+                    </div>
+                  </div>
+                  <div class="link8">
+                    <div class="container66">
+                      <b class="get-help">Get Help</b>
+                    </div>
+                    <div class="margin15">
+                      <img
+                        class="svg-icon20"
+                        alt=""
+                        src="./public/svg-17.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container67">
+                <div class="container68">
+                  <div class="button-animation6">
+                    <img
+                      class="svg-icon21"
+                      alt=""
+                      src="./public/svg-22@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-frame">
+              <div class="container69">
+                <div class="container70">
+                  <div class="container71">
+                    <div class="button-animation7">
+                      <img
+                        class="svg-icon22"
+                        alt=""
+                        src="./public/svg-23@2x.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="container72">
+                  <div class="container73">
+                    <div class="heading-16">
+                      <div class="fees-as-clear">Fees as clear as glass.</div>
+                    </div>
+                    <div class="container74">
+                      <div class="were-serious-about-container">
+                        <p class="were-serious-about">
+                          We’re serious about free banking, and we will
+                        </p>
+                        <p class="never-ever-charge">
+                          never, ever charge you for anything without
+                        </p>
+                        <p class="your-consent">your consent.</p>
+                      </div>
+                    </div>
+                    <div class="container75">
+                      <div class="container76">
+                        <b class="see-all-our1">See all our fees</b>
+                      </div>
+                      <div class="margin16">
+                        <img
+                          class="svg-icon23"
+                          alt=""
+                          src="./public/svg-17.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews">
+              <h1 class="dont-just-take">Don’t just take our word for it</h1>
+            </div>
+            <div class="container77">
+              <div class="margin17">
+                <div class="backgroundshadow5">
+                  <div class="testimonial-items">
+                    <div class="well-done-to-container">
+                      <span>Well done to the guys at </span>
+                      <b>@kudabank</b>
+                    </div>
+                    <div class="had-a-dispensing">
+                      had a dispensing error on Friday night
+                    </div>
+                    <div class="and-reached-out">
+                      and reached out to them on Sunday... 48
+                    </div>
+                    <div class="working-hours-after">
+                      working hours after and my money is
+                    </div>
+                    <div class="back-in-my">
+                      back in my account... Special shout out
+                    </div>
+                    <div class="to-maxwell-and">to Maxwell and Norah</div>
+                  </div>
+                  <div class="testimonial-images">
+                    <div class="muhammad-a382b5f53a5e464e0a292">
+                      <img
+                        class="muhammad-a382b5f53a5e464e0a292-icon"
+                        alt=""
+                        src="./public/muhammada382b5f53a5e464e0a2929be0c68f852svg@2x.png"
+                      />
+                    </div>
+                    <div class="user-names">
+                      <div class="muazu-muhammad-kudu">
+                        Mu'azu Muhammad Kudu
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin18">
+                <div class="backgroundshadow6">
+                  <div class="container78">
+                    <div class="paragraph">
+                      <div class="just-joined-the">
+                        Just joined the best Digital Bank in
+                      </div>
+                      <div class="nigeria">Nigeria</div>
+                    </div>
+                    <div class="margin19">
+                      <div class="paragraph1">
+                        <div class="i-have-no">
+                          I have no complaints whatsoever since i
+                        </div>
+                        <div class="started-using-kuda">started using Kuda</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="margin20">
+                    <div class="container79">
+                      <div class="background">
+                        <h3 class="t">T</h3>
+                      </div>
+                      <div class="margin21">
+                        <div class="tomisinv">Tomisinv</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin22">
+                <div class="backgroundshadow7">
+                  <div class="never-thought-an-app-would-sty-parent">
+                    <div class="never-thought-an">
+                      Never thought an app would stylish
+                    </div>
+                    <div class="become-my-everyday">
+                      become my everyday way to bank and
+                    </div>
+                    <div class="have-access-to">
+                      have access to physical cash.
+                    </div>
+                    <div class="kudabank-is-sleek-container">
+                      <b>@kudabank</b>
+                      <span> is sleek</span>
+                    </div>
+                  </div>
+                  <div class="babajide-ca560e39acf445ef6c8e9-parent">
+                    <div class="babajide-ca560e39acf445ef6c8e9">
+                      <img
+                        class="babajide-ca560e39acf445ef6c8e9-icon"
+                        alt=""
+                        src="./public/babajideca560e39acf445ef6c8e91104ef1be8dsvg@2x.png"
+                      />
+                    </div>
+                    <div class="babajide-duroshola-wrapper">
+                      <div class="babajide-duroshola">Babajide Duroshola</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin23">
+                <div class="backgroundshadow8">
+                  <div class="this-is-the-best-banking-app-parent">
+                    <div class="this-is-the">
+                      This is the best banking app! I’m enjoying
+                    </div>
+                    <div class="seamless-banking-plus">
+                      seamless banking plus the free transfers to other
+                    </div>
+                    <div class="banks-is-a">
+                      banks is a thing of joy. This is what I call freedom.
+                    </div>
+                    <div class="ive-made-kuda">
+                      I’ve made kuda my main bank account and I’m
+                    </div>
+                    <div class="gonna-refer-all">
+                      gonna refer all my friends!
+                    </div>
+                  </div>
+                  <div class="realsok-66705285fe944c95934d7f-parent">
+                    <div class="realsok-66705285fe944c95934d7f">
+                      <img
+                        class="realsok-66705285fe944c95934d7f-icon"
+                        alt=""
+                        src="./public/realsok66705285fe944c95934d7ff3bda73becsvg@2x.png"
+                      />
+                    </div>
+                    <div class="realsok-wrapper">
+                      <div class="realsok-">@RealSOK_</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin24">
+                <div class="backgroundshadow9">
+                  <div class="adebambo-a15ee685f877074818864">
+                    <img
+                      class="adebambo-a15ee685f877074818864-icon"
+                      alt=""
+                      src="./public/adebamboa15ee685f877074818864b3eeecdfeefsvg@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="margin25">
+                <div class="backgroundshadow10">
+                  <div class="container80">
+                    <div class="background1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin26">
+                <div class="backgroundshadow11">
+                  <div class="muhammad-a382b5f53a5e464e0a2921">
+                    <img
+                      class="muhammad-a382b5f53a5e464e0a292-icon1"
+                      alt=""
+                      src="./public/muhammada382b5f53a5e464e0a2929be0c68f852svg@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="margin27">
+                <div class="backgroundshadow12">
+                  <div class="container81"></div>
+                  <div class="container82">
+                    <div class="background2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin28">
+                <div class="backgroundshadow13">
+                  <div class="container83"></div>
+                  <div class="babajide-ca560e39acf445ef6c8e91">
+                    <img
+                      class="babajide-ca560e39acf445ef6c8e9-icon1"
+                      alt=""
+                      src="./public/babajideca560e39acf445ef6c8e91104ef1be8dsvg@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="margin29">
+                <div class="backgroundshadow14">
+                  <div class="realsok-66705285fe944c95934d7f1">
+                    <img
+                      class="realsok-66705285fe944c95934d7f-icon1"
+                      alt=""
+                      src="./public/realsok66705285fe944c95934d7ff3bda73becsvg@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="margin30">
+                <div class="backgroundshadow15">
+                  <div class="adebambo-a15ee685f8770748188641">
+                    <img
+                      class="adebambo-a15ee685f877074818864-icon1"
+                      alt=""
+                      src="./public/adebamboa15ee685f877074818864b3eeecdfeefsvg@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="margin31">
+                <div class="backgroundshadow16">
+                  <div class="container84">
+                    <div class="background3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container85">
+              <div class="container86">
+                <div class="linkmargin2">
+                  <img
+                    class="link-image"
+                    alt=""
+                    src="./public/link--image.svg"
+                  />
+                </div>
+                <div class="linkmargin3">
+                  <img
+                    class="link-image1"
+                    alt=""
+                    src="./public/link--image-1@2x.png"
+                  />
+                </div>
+                <div class="linkmargin4">
+                  <img
+                    class="link-fintech-0a9e5796db280b8"
+                    alt=""
+                    src="./public/link--fintech0a9e5796db280b81800496a6c3c23c6dsvg.svg"
+                  />
+                </div>
+                <div class="linkmargin5">
+                  <img
+                    class="link-image2"
+                    alt=""
+                    src="./public/link--image-2.svg"
+                  />
+                </div>
+                <div class="linkmargin6">
+                  <img
+                    class="link-cnbc-45f58c789bba9e75d1"
+                    alt=""
+                    src="./public/link--cnbc45f58c789bba9e75d11c83bb03c5d3ffsvg.svg"
+                  />
+                </div>
+                <div class="link9">
+                  <img
+                    class="euromoney-2f7f12d4caef10de0f43-icon"
+                    alt=""
+                    src="./public/euromoney2f7f12d4caef10de0f43b424ad5bd0a2svg.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="background4">
+              <div class="container87">
+                <div class="container88">
+                  <div class="heading-17">
+                    <h1 class="our-partners">Our Partners</h1>
+                  </div>
+                  <div class="container89">
+                    <img class="image-icon" alt="" src="./public/image.svg" />
+
+                    <img
+                      class="entreecapital-af919d4ffd7d5cef-icon"
+                      alt=""
+                      src="./public/entreecapitalaf919d4ffd7d5cef28085ee2a9085519svg.svg"
+                    />
+
+                    <img
+                      class="sbiholdings-32de2b58b5a5d5a406-icon"
+                      alt=""
+                      src="./public/sbiholdings32de2b58b5a5d5a40696e17db098a44dsvg.svg"
+                    />
+
+                    <img
+                      class="targetglobal-d0857fbce3223960d-icon"
+                      alt=""
+                      src="./public/targetglobald0857fbce3223960d649682020537e20svg.svg"
+                    />
+
+                    <img
+                      class="image-icon1"
+                      alt=""
+                      src="./public/image-1@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="freedom">
+              <div class="freedom-content">
+                <div class="choose-the-freedom">
+                  Choose the freedom you need.
+                </div>
+              </div>
+              <div class="backgroundbordershadow">
+                <div class="container90">
+                  <div class="container91">
+                    <div class="heading-2">
+                      <div class="other-banks">Other Banks</div>
+                    </div>
+                  </div>
+                  <div class="container92">
+                    <img class="svg-icon24" alt="" src="./public/svg-25.svg" />
+                  </div>
+                </div>
+                <div class="transfer">
+                  <div class="horizontalborder">
+                    <div class="transfer-content">
+                      <div class="container93">
+                        <div class="container94">
+                          <div class="container95">
+                            <b class="transfer-fee">Transfer Fee</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kuda-transfer">
+                        <img
+                          class="svg-icon25"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                      <div class="up-to-50">Up to ₦50 plus V.A.T.</div>
+                    </div>
+                    <div class="bank-transfer-content-parent">
+                      <div class="bank-transfer-content">
+                        <img
+                          class="svg-icon26"
+                          alt=""
+                          src="./public/svg-27.svg"
+                        />
+                      </div>
+                      <div class="free-transfers-every">
+                        25 free transfers every month
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery">
+                    <div class="horizontalborder1">
+                      <div class="delivery-content">
+                        <div class="container96">
+                          <div class="container97">
+                            <div class="container98">
+                              <b class="card-delivery">Card Delivery</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kuda-delivery">
+                          <div class="svg-parent">
+                            <img
+                              class="svg-icon27"
+                              alt=""
+                              src="./public/svg-28@2x.png"
+                            />
+
+                            <img
+                              class="svg-icon28"
+                              alt=""
+                              src="./public/svg-26.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="confirmation-parent">
+                        <div class="confirmation">
+                          <img
+                            class="svg-icon29"
+                            alt=""
+                            src="./public/svg-27.svg"
+                          />
+                        </div>
+                        <div class="yes">Yes</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="horizontalborder-parent">
+                  <div class="horizontalborder2">
+                    <div class="fee-options">
+                      <div class="container99">
+                        <div class="container100">
+                          <div class="container101">
+                            <b class="card-maintenance-fee"
+                              >Card Maintenance Fee</b
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bank-icons">
+                        <img
+                          class="svg-icon30"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                      <div class="up-to-501">Up to ₦50 per quarter</div>
+                    </div>
+                    <div class="card-fee">
+                      <div class="other-bank-option">
+                        <img
+                          class="svg-icon31"
+                          alt=""
+                          src="./public/svg-27.svg"
+                        />
+                      </div>
+                      <div class="no">No</div>
+                    </div>
+                  </div>
+                  <div class="horizontalborder3">
+                    <div class="container-parent">
+                      <div class="container102">
+                        <div class="container103">
+                          <div class="container104">
+                            <b class="alerts">Alerts</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="svg-wrapper">
+                        <img
+                          class="svg-icon32"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                      <div class="charge-for-sms">Charge for SMS alerts</div>
+                    </div>
+                    <div class="frame-group">
+                      <div class="svg-container">
+                        <img
+                          class="svg-icon33"
+                          alt=""
+                          src="./public/svg-27.svg"
+                        />
+                      </div>
+                      <div class="free-instant-notifications">
+                        Free instant notifications
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="horizontalborder4">
+                  <div class="table-content">
+                    <div class="container105">
+                      <div class="container106">
+                        <div class="container107">
+                          <b class="annual-interest">Annual Interest</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transfer-limit">
+                      <div class="interest-content">
+                        <img
+                          class="svg-icon34"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                      <div class="div">4%</div>
+                    </div>
+                  </div>
+                  <div class="table-header">
+                    <div class="maintenance-content">
+                      <img
+                        class="svg-icon35"
+                        alt=""
+                        src="./public/svg-27.svg"
+                      />
+                    </div>
+                    <div class="up-to-15">Up to 15%</div>
+                  </div>
+                </div>
+                <div class="horizontalborder5">
+                  <div class="container-group">
+                    <div class="container108">
+                      <div class="container109">
+                        <div class="container110">
+                          <b class="bill-payment-fee">Bill Payment Fee</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="svg-frame">
+                      <img
+                        class="svg-icon36"
+                        alt=""
+                        src="./public/svg-26.svg"
+                      />
+                    </div>
+                    <div class="up-to-100">Up to ₦100 per bill</div>
+                  </div>
+                  <div class="frame-container">
+                    <div class="frame-div">
+                      <img
+                        class="svg-icon37"
+                        alt=""
+                        src="./public/svg-27.svg"
+                      />
+                    </div>
+                    <div class="no1">No</div>
+                  </div>
+                </div>
+                <div class="horizontalborder6">
+                  <div class="reversal-blocks">
+                    <div class="container111">
+                      <div class="container112">
+                        <div class="container113">
+                          <b class="instant-reversals">Instant Reversals</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reversal-icons">
+                      <div class="svg-group">
+                        <img
+                          class="svg-icon38"
+                          alt=""
+                          src="./public/svg-39@2x.png"
+                        />
+
+                        <img
+                          class="svg-icon39"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reversal-status-parent">
+                    <div class="reversal-status">
+                      <img
+                        class="svg-icon40"
+                        alt=""
+                        src="./public/svg-27.svg"
+                      />
+                    </div>
+                    <div class="yes1">Yes</div>
+                  </div>
+                </div>
+                <div class="horizontalborder7">
+                  <div class="container-parent1">
+                    <div class="container114">
+                      <div class="container115">
+                        <div class="container116">
+                          <b class="maintenance">Maintenance</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame-parent1">
+                      <div class="svg-wrapper1">
+                        <img
+                          class="svg-icon41"
+                          alt=""
+                          src="./public/svg-26.svg"
+                        />
+                      </div>
+                      <div class="yes2">Yes</div>
+                    </div>
+                  </div>
+                  <div class="frame-parent2">
+                    <div class="svg-wrapper2">
+                      <img
+                        class="svg-icon42"
+                        alt=""
+                        src="./public/svg-27.svg"
+                      />
+                    </div>
+                    <div class="no2">No</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="business-heading-parent">
+              <div class="business-heading">
+                <div class="more-for-you">More for you</div>
+              </div>
+              <div class="container117">
+                <div class="backgroundshadow17">
+                  <img class="svg-icon43" alt="" src="./public/svg-44.svg" />
+
+                  <div class="business-card-details">
+                    <h3 class="kuda-business">Kuda Business</h3>
+                    <div class="grow-your-business-container">
+                      <span>
+                        <p class="grow-your-business">
+                          Grow your business with our all-in-one
+                        </p>
+                        <p class="business-manager-get">
+                          business manager. Get a POS, bulk
+                        </p>
+                        <p class="transfers-payroll-and">
+                          transfers, payroll and more.
+                        </p>
+                      </span>
+                    </div>
+                    <div class="linkmargin7">
+                      <div class="link10">
+                        <div class="container118">
+                          <a class="learn-more">Learn more</a>
+                        </div>
+                        <div class="margin32">
+                          <img
+                            class="svg-icon44"
+                            alt=""
+                            src="./public/svg-17.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="backgroundshadow18">
+                  <img class="svg-icon45" alt="" src="./public/svg-46.svg" />
+
+                  <div class="transfer-spend-parent">
+                    <h3 class="transfer-spend">Transfer & Spend</h3>
+                    <div class="send-money-for-container">
+                      <span>
+                        <p class="send-money-for">
+                          Send money for free to any Nigerian
+                        </p>
+                        <p class="account-with-25">
+                          account with 25 free transfers every
+                        </p>
+                        <p class="month">month.</p>
+                      </span>
+                    </div>
+                    <div class="linkmargin8">
+                      <div class="link11">
+                        <div class="container119">
+                          <a class="learn-more1">Learn more</a>
+                        </div>
+                        <div class="margin33">
+                          <img
+                            class="svg-icon46"
+                            alt=""
+                            src="./public/svg-17.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="backgroundshadow19">
+                  <img class="svg-icon47" alt="" src="./public/svg-48.svg" />
+
+                  <div class="loans-parent">
+                    <h3 class="loans">Loans</h3>
+                    <div class="get-up-to-container">
+                      <span>
+                        <p class="get-up-to">
+                          Get up to ₦150,000 in your Kuda account
+                        </p>
+                        <p class="easily-and-repay">
+                          easily and repay in convenient
+                        </p>
+                        <p class="instalments">instalments.</p>
+                      </span>
+                    </div>
+                    <div class="linkmargin9">
+                      <div class="link12">
+                        <div class="container120">
+                          <a class="learn-more2">Learn more</a>
+                        </div>
+                        <div class="margin34">
+                          <img
+                            class="svg-icon48"
+                            alt=""
+                            src="./public/svg-17.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="backgroundbordershadow1">
+              <div class="container121">
+                <div class="container122">
+                  <div class="heading-18">
+                    <h1 class="the-money-app-container1">
+                      <span>
+                        <p class="the-money-app1">The money app for</p>
+                        <p class="africans1">Africans.</p>
+                      </span>
+                    </h1>
+                  </div>
+                  <div class="container123">
+                    <div class="save-spend-send">
+                      Save, spend, send and invest money across borders.
+                    </div>
+                  </div>
+                  <div class="link13">
+                    <b class="join-kuda1">Join Kuda</b>
+                  </div>
+                </div>
+              </div>
+              <img class="svg-icon49" alt="" src="./public/svg-50@2x.png" />
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <div class="container124">
+            <div class="footer-top">
+              <div class="container125">
+                <div class="margin35">
+                  <div class="container126">
+                    <div class="container127">
+                      <img
+                        class="svg-icon50"
+                        alt=""
+                        src="./public/svg-25.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="margin36">
+                  <div class="container128">
+                    <div class="container129">
+                      <b class="personal1">Personal</b>
+                    </div>
+                    <div class="list1">
+                      <div class="item4">
+                        <div class="link-discover">Discover Personal</div>
+                      </div>
+                      <div class="item5">
+                        <div class="link-transfer">Transfer & Spend</div>
+                      </div>
+                      <div class="item6">
+                        <a class="link-save">Save</a>
+                      </div>
+                      <div class="item7">
+                        <div class="link-investments">Investments</div>
+                      </div>
+                      <div class="item8">
+                        <a class="link-kuda">Kuda card</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin37">
+                  <div class="container130">
+                    <div class="container131">
+                      <a class="business1">Business</a>
+                    </div>
+                    <div class="list2">
+                      <div class="item9">
+                        <div class="link-discover1">Discover Business</div>
+                      </div>
+                      <div class="item10">
+                        <div class="link-business">Business Registration</div>
+                      </div>
+                      <div class="item11">
+                        <div class="link-softpos">softPOS</div>
+                      </div>
+                      <div class="item12">
+                        <div class="link-invoicing">Invoicing</div>
+                      </div>
+                      <div class="item13">
+                        <div class="link-salary">Salary Loan</div>
+                      </div>
+                      <div class="item14">
+                        <div class="link-business1">Business API</div>
+                      </div>
+                      <div class="item15">
+                        <div class="link-join">Join Kuda Business</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin38">
+                  <div class="container132">
+                    <div class="container133">
+                      <b class="company1">Company</b>
+                    </div>
+                    <div class="list3">
+                      <div class="item16">
+                        <a class="link-blog">Blog</a>
+                      </div>
+                      <div class="item17">
+                        <a class="link-press">Press</a>
+                      </div>
+                      <div class="item18">
+                        <div class="link-join1">Join Our Team</div>
+                      </div>
+                      <div class="item19">
+                        <a class="link-about">About Us</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin39">
+                  <div class="container134">
+                    <div class="container135">
+                      <b class="help1">Help</b>
+                    </div>
+                    <div class="list4">
+                      <div class="item20">
+                        <a class="link-get">Get Help</a>
+                      </div>
+                      <div class="item21">
+                        <div class="link-scam">Scam Awareness</div>
+                      </div>
+                      <div class="item22">
+                        <a class="link-faqs">FAQs</a>
+                      </div>
+                      <div class="item23">
+                        <a class="link-security">Security</a>
+                      </div>
+                      <div class="item24">
+                        <div class="link-contact">Contact Us</div>
+                      </div>
+                      <div class="item25">
+                        <div class="link-self">Self Help</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container136">
+                  <div class="container137">
+                    <b class="transparency">Transparency</b>
+                  </div>
+                  <div class="list5">
+                    <div class="item26">
+                      <a class="link-terms">Terms & Conditions</a>
+                    </div>
+                    <div class="item27">
+                      <a class="link-privacy">Privacy Policy</a>
+                    </div>
+                    <div class="item28">
+                      <div class="link14">
+                        <div class="information-security-policy-container">
+                          <p class="information-security">
+                            Information Security
+                          </p>
+                          <p class="policy">Policy</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item29">
+                      <div class="link-cookie">Cookie Policy</div>
+                    </div>
+                    <div class="item30">
+                      <div class="link-whistleblowing">
+                        Whistleblowing Policy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link-svg-parent">
+              <img class="link-svg" alt="" src="./public/link--svg@2x.png" />
+
+              <img class="link-svg1" alt="" src="./public/svg-7.svg" />
+
+              <div class="location-details">
+                <img class="link-svg2" alt="" src="./public/link--svg-2.svg" />
+
+                <div class="disclaimer">
+                  <div class="products-may-vary">
+                    Products may vary by country or market.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container138">
+              <div class="margin40">
+                <div class="container139">
+                  <div class="container140">
+                    <b class="contact">Contact</b>
+                  </div>
+                  <div class="container141">
+                    <div class="link15">
+                      <b class="helpkudacom">help@kuda.com</b>
+                    </div>
+                    <div class="list-item">
+                      <div class="linkmargin10">
+                        <div class="link16">
+                          <div class="svg">
+                            <img class="icon" alt="" src="./public/icon.svg" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkmargin11">
+                        <div class="link17">
+                          <div class="svg1">
+                            <img
+                              class="frame-icon"
+                              alt=""
+                              src="./public/frame-1.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkmargin12">
+                        <div class="link18">
+                          <div class="svg2">
+                            <img
+                              class="frame-icon1"
+                              alt=""
+                              src="./public/frame-2.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkmargin13">
+                        <div class="link19">
+                          <div class="svg3">
+                            <img
+                              class="frame-icon2"
+                              alt=""
+                              src="./public/frame-3@2x.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkmargin14">
+                        <div class="link20">
+                          <div class="svg4">
+                            <img
+                              class="frame-icon3"
+                              alt=""
+                              src="./public/frame-4@2x.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="linkmargin15">
+                        <div class="link21">
+                          <div class="svg5">
+                            <img
+                              class="frame-icon4"
+                              alt=""
+                              src="./public/frame-5@2x.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin41">
+                <div class="container142">
+                  <div class="container143">
+                    <b class="lagos">Lagos</b>
+                  </div>
+                  <div class="container144">
+                    <div class="commercial-avenue-yaba-container">
+                      <p class="commercial-avenue">1-11 Commercial Avenue,</p>
+                      <p class="yaba-lagos">Yaba, Lagos,</p>
+                      <p class="nigeria1">Nigeria</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin42">
+                <div class="container145">
+                  <div class="container146">
+                    <b class="london">London</b>
+                  </div>
+                  <div class="container147">
+                    <div class="new-street-square-container">
+                      <p class="new-street-square">5 New Street Square,</p>
+                      <p class="london-ec4a-3tw">London, EC4A 3TW,</p>
+                      <p class="united-kingdom">United Kingdom</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin43">
+                <div class="container148">
+                  <div class="container149">
+                    <b class="cape-town">Cape Town</b>
+                  </div>
+                  <div class="container150">
+                    <div class="campground-road-snakepit-container">
+                      <p class="campground-road">146 Campground Road,</p>
+                      <p class="snakepit-building-level">
+                        Snakepit Building, Level 4,
+                      </p>
+                      <p class="newlands-cape-town">Newlands, Cape Town</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container151">
+                <div class="container152">
+                  <b class="canada">Canada</b>
+                </div>
+                <div class="container153">
+                  <div class="yonge-street-suite-container">
+                    <span>
+                      <p class="yonge-street">3080 Yonge Street,</p>
+                      <p class="suite-6060-toronto">Suite 6060, Toronto,</p>
+                      <p class="ontario-m4n-3n1">Ontario M4N 3N1</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="kuda-customers-get-container">
+                <p class="kuda-customers-get">
+                  *Kuda Customers get 25 free transfer to other banks every
+                  month. Extra transfers to other banks cost ₦10 each.
+                </p>
+                <p class="kuda-account-holders">
+                  **Kuda account holders can deposit money in over 10,000
+                  branches across Nigeria for free.
+                </p>
+              </div>
+              <div class="kuda-technologies-ltd">
+                © 2024 Kuda Technologies Ltd (Company No.11472232). All rights
+                reserved.
+              </div>
+              <div class="if-you-would-container">
+                <p class="if-you-would">
+                  If you would like to find out more about which Kuda entity you
+                  receive services from, please reach out to us via the in-app
+                  chat in the Kuda app. Nigerian banking services offered by
+                  Kuda
+                </p>
+                <p class="microfinance-bank-rc796975">
+                  Microfinance Bank (RC796975) with registered address at 1-11
+                  Commercial Avenue, Yaba, Lagos, Nigeria. Kuda Microfinance
+                  Bank is licensed by the Central Bank of Nigeria. Deposits are
+                </p>
+                <p class="insured-by-the">
+                  insured by the Nigerian Deposit Insurance Corporation (NDIC).
+                </p>
+              </div>
+              <div class="uk-services-are">
+                UK services are offered by Kuda EMI Ltd (Company No. 13724208)
+                with registered address at 5 New Street Square, London, EC4A
+                3TW, United Kingdom.
+              </div>
+              <div class="canada-services-will-container">
+                <p class="canada-services-will">
+                  Canada services will be provided by Kuda Canada Technologies
+                  Limited, an Ontario corporation registered under number
+                  1000286176, with its registered address located at 3080 Yonge
+                </p>
+                <p class="street-suite-6060">
+                  Street, Suite 6060, Toronto, Ontario M4N 3N1. Kuda Canada
+                  Technologies Limited is duly registered with The Financial
+                  Transactions and Reports Analysis Centre of Canada (FINTRAC)
+                  as a
+                </p>
+                <p class="money-service-business">
+                  money service business, bearing registration number M23163015.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
