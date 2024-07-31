@@ -13,153 +13,10 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap"
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-    />
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css />
 
-    <style>
-
-      /* Base Styles */
-.header {
-  background-color: #fff; /* Adjust as needed */
-  padding: 10px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container1 {
-  display: flex;
-  align-items: center;
-}
-
-.link {
-  margin-right: 20px;
-}
-
-.svg-icon {
-  width: 50px; /* Adjust as needed */
-}
-
-.listmargin {
-  display: flex;
-  align-items: center;
-}
-
-.list {
-  display: flex;
-}
-
-.itemmargin, .itemmargin1, .itemmargin2, .itemmargin3 {
-  margin-right: 20px;
-}
-
-.item a {
-  text-decoration: none;
-  color: #333; /* Adjust as needed */
-  font-size: 16px; /* Adjust as needed */
-}
-
-.link1, .link2 {
-  margin-left: 20px;
-}
-
-.link2 a {
-  text-decoration: none;
-  color: #007BFF; /* Adjust as needed */
-  font-weight: bold;
-}
-
-.svg-icon5 {
-  width: 40px; /* Adjust as needed */
-}
-
-/* Responsive Styles */
-@media (max-width: 1023px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .container1 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .listmargin {
-    display: none; /* Hide menu items on small screens */
-  }
-
-  .container6, .container7, .container8 {
-    display: none; /* Hide sign-in and join buttons on small screens */
-  }
-
-  .svg-icon5 {
-    display: block; /* Hide image icon on small screens */
-  }
-
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-    margin-left: auto;
-  }
-
-  .hamburger-menu img {
-    width: 30px; /* Adjust as needed */
-  }
-
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    right: 0;
-    background-color: #fff; /* Adjust as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 250px; /* Adjust as needed */
-    z-index: 1000;
-  }
-
-  .nav-menu.active {
-    display: block;
-  }
-
-  .nav-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333; /* Adjust as needed */
-    font-size: 16px; /* Adjust as needed */
-  }
-
-  .nav-menu .itemmargin {
-    margin: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .listmargin {
-    display: flex; /* Show menu items on larger screens */
-  }
-
-  .container6, .container7, .container8 {
-    display: flex; /* Show sign-in and join buttons on larger screens */
-  }
-
-  .svg-icon5 {
-    display: block; /* Show image icon on larger screens */
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-
-  .nav-menu {
-    display: none;
-  }
-}
-
-      /* Base Styles */
+      <style>
+        /* Base Styles */
 body {
   font-family: "Muli", sans-serif;
   margin: 0;
@@ -209,6 +66,56 @@ body {
 
   .linkmargin, .margin, .item {
     margin-bottom: 10px;
+  }
+
+  /* Hide menu items on small screens */
+  .listmargin {
+    display: none;
+  }
+
+  /* Hide sign-in and join buttons on small screens */
+  .container6, .container7, .container8 {
+    display: none;
+  }
+
+  /* Show hamburger menu on small screens */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .hamburger-menu img {
+    width: 30px; /* Adjust as needed */
+  }
+
+  /* Hide nav menu by default */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 0;
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Adjust as needed */
+    z-index: 1000;
+  }
+
+  /* Show nav menu when active */
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Adjust as needed */
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .nav-menu .itemmargin {
+    margin: 0;
   }
 }
 
@@ -268,6 +175,25 @@ body {
   .linkmargin, .margin, .item {
     margin-bottom: 10px;
   }
+
+  /* Show menu items on larger screens */
+  .listmargin {
+    display: flex;
+  }
+
+  /* Show sign-in and join buttons on larger screens */
+  .container6, .container7, .container8 {
+    display: flex;
+  }
+
+  /* Hide hamburger menu on larger screens */
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
 }
 
 /* Specific classes */
@@ -312,7 +238,9 @@ body {
     font-size: 1rem;
   }
 }
-    </style>
+
+      </style>
+   
   </head>
   <body>
     <div class="kudacom">
@@ -1986,11 +1914,12 @@ body {
         </section>
       </main>
     </div>
+
     <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
         document.querySelector('.nav-menu').classList.toggle('active');
       });
-
     </script>
+  
   </body>
 </html>
